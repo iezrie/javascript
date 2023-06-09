@@ -5,7 +5,14 @@ const age = 30;
 // reference values stored on the heap
 const person = {
   name: 'Brad',
-  age
-
+  age: 40
 }
-// https://www.udemy.com/course/modern-javascript-from-the-beginning/learn/lecture/37191180#overview
+
+let newName = name;
+newName = 'Jonathan';
+
+let newPerson = person;
+newPerson.name = 'Brad';
+
+console.log(name, newName);
+console.log(person, newPerson);
